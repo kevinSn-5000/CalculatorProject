@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Easy Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="display"></div>
+<body class = "body">
+ 
 
 
-    <div class="buttons">
-        <button onclick="changeDisplay(7)">7</button>
-        <button onclick="changeDisplay(8)">8</button>
-        <button onclick="changeDisplay(9)">9</button>
-        <button>C</button>
+    <div class="calculator">
+        <div class="display"></div>
 
-        <button onclick="changeDisplay(4)">4</button>
-        <button onclick="changeDisplay(5)">5</button>
-        <button onclick="changeDisplay(6)">6</button>
-        <button class = "operand add">+</button>
+        <div class="buttons">
 
-        <button onclick="changeDisplay(1)">1</button>
-        <button onclick="changeDisplay(2)">2</button>
-        <button onclick="changeDisplay(3)">3</button>
-        <button class = "operand subtract">-</button>
+        <button class ="button special clear">AC</button>
+        <button class ="button special sign">+/-</button>
+        <button class ="button special percentage">%</button>      
+        <button class ="button operand divide">/</button>
+        
+        <button class ="button" onclick="changeDisplay(7)">7</button>
+        <button class ="button" onclick="changeDisplay(8)">8</button>
+        <button class ="button" onclick="changeDisplay(9)">9</button>
+        <button class ="button operand multiply">*</button>
 
-        <button onclick="changeDisplay(0)">0</button>
-        <button class ="operand multiply">x</button>
-        <button class ="operand divide">/</button>
-        <button class ="equalButton">=</button>
+        <button class ="button" onclick="changeDisplay(4)">4</button>
+        <button class ="button" onclick="changeDisplay(5)">5</button>
+        <button class ="button" onclick="changeDisplay(6)">6</button>
+        <button class ="button operand subtract">-</button>
 
+
+        <button class ="button" onclick="changeDisplay(1)">1</button>
+        <button class ="button" onclick="changeDisplay(2)">2</button>
+        <button class ="button" onclick="changeDisplay(3)">3</button>
+        <button class ="button operand add">+</button>
+
+        <button class="button special backspace">←</button>
+        <button class ="button" onclick="changeDisplay(0)">0</button>
+        <button class ="button" onclick="changeDisplay('.')">.</button>
+        <button class ="button operand equalButton">=</button>
+
+        </div>
     </div>
 
 
